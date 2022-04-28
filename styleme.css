@@ -1,0 +1,43 @@
+.imagesize{
+    width:175px; height:180px;
+}
+
+.b-background{
+    background-color: #F5F5DC;
+}
+
+.b-size{
+   width: 50%; height: 50%;
+}
+
+.mood-size{
+    width:275px; height:280px;
+ }
+.b-position{
+    align-content: center;
+    margin: auto;
+}
+
+.p-large{
+    font-size: 50px;
+    color:#DAA520;
+}
+
+.moods{
+    display:inline-block;
+}
+
+.main-font-style{
+    color:#DAA520;
+    font-size: 23px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+   color:darkorange;
+   
+}
+
+.align-right{
+    padding-left: 65%;
+}
