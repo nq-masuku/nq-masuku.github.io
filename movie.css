@@ -1,0 +1,147 @@
+.body-style{
+    background-image: url('images/backgroundr.png');
+    margin:0;
+    padding:0;
+}
+
+.banner{
+    width: 100%;
+    margin: auto;
+    padding:0;
+    background-image: url('images/bannerbg.png');
+    
+}
+.banner1{
+    display:block;
+    margin:auto;
+}
+
+.banner2{
+    margin:auto;
+    padding:0;
+    object-fit: cover;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 3px 3px 0 #999999;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana;
+}
+
+.mainDiv{
+    border: 4px outset #999999;
+    border-style: solid;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.subDiv{
+    width: 72%;
+    margin: auto;
+    padding:0;
+    margin-left: -8px;
+    background-image: url('images/rbg.png');
+    background-repeat: repeat-x;
+}
+
+.subDiv2{
+    width: 72%;
+    margin: auto;
+    padding:0;
+    margin-left: -8px;
+}
+
+.rightSubDiv{
+    width: 32%;
+    float: right;
+    background-color: #A2B964;
+    height: 100%;
+    margin-top: -93px;
+  
+}
+
+.rating{
+    font-size: 50pt;
+    color: red;
+    font-weight: bold; 
+    vertical-align:top;  
+    font-family: Tahoma, Verdana;
+}
+
+dl{
+    margin-left:10pt;
+    margin-right:10pt;
+    font-size: 8pt;
+    font-family: Arial;
+    
+}
+
+dt{
+    font-weight: bold;
+    padding-top:10pt;
+}
+
+li{
+    list-style-type: none
+}
+
+.columns0{
+    border: 2px outset #999999;
+    border-style: solid;
+    border-radius: 10px;
+    width:42%;
+    margin-left: 3.5%;
+    margin-top: 1%;
+    float: left;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    font-family: Tahoma, Verdana;
+    padding-left:6px;
+
+}
+
+.columns{
+    border: 2px outset #999999;
+    border-style: solid;
+    border-radius: 10px;
+    width:42%;
+    margin-left: 3.5%;
+    margin-top: 4%;
+    float: left;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    font-family: Tahoma, Verdana;
+    padding-left:6px;
+
+}
+
+.icons{
+    border: 2px outset #E8DC9B;
+    width:43%;
+    margin-left: 3.5%;
+    margin-top: 1%;
+    float: left;
+    font-size: 8pt;
+}
+
+.text{
+    margin-left: 37px;
+    margin-top: -32px;
+}
+
+.footer{
+    width: 56%;
+    height: 25px;
+    position: absolute;
+    margin-top:80%;
+    text-align: center;
+    background-color: #A2B964;
+}
