@@ -1,0 +1,37 @@
+.myDiv {
+    border: 1px outset #404040;
+    background-color: #E6E6FA;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    padding-top:15px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 35px;
+  }
+   .fdiv {
+       background-color: white;
+    margin-left:5px;
+     position: absolute;
+    width: 120px;
+    border: 1px outset #404040;
+    text-align: center;}
+
+  .input1{
+      float: left;
+      margin-left:5px;
+  }
+  td{
+      text-align: left;
+  }
+  .txt{
+      font-weight: bold;
+  }
+  .sp{
+      color: lightpink;
+      font-weight: bold;
+      padding-left: 3px;
+  }

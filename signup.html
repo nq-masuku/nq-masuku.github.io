@@ -3,30 +3,21 @@
 
 <head>
     <title>Sign-up</title>
-    <style>
-        .myDiv {
-          border: 1px outset #404040;
-          text-align: center;
-          width: 30%;
-          height: 22%;
-        }
-        </style>
+    <link rel="stylesheet" href="signupc.css">
 </head>
 
 <body>
-    <div class="myDiv">
-    <h1>Enter details to Sign-up</h1>
-    
+    <div class="myDiv">    
     <form action="http://mumstudents.org/params.php">
         <table>
-            <tr><td>Name:</td><td><input name="name" /></td></tr>
-            <tr><td>Gender:</td><td><input type="radio" name="cc" value="Male" /> Male
-                <input type="radio" name="cc" value="Female" checked /> Female</td></tr>
+            <tr><td class="txt">Name:</td><td><input name="name" class="input1" size="16"/></td></tr>
+            <tr><td class="txt">Gender:</td><td><input type="radio" name="cc" value="Male" class="input1"/> <span class="input1">Male</span>
+                <input type="radio" name="cc" value="Female" checked class="input1"/> <span class="input1">Female</span></td></tr> 
 
-            <tr><td>Age:</td><td><input name="age"  size="4"/></td></tr>    
-            <tr><td>Personality:</td><td><input name="personality"  size="4"/></td></tr>   
-            <tr><td>Favourite OS:</td><td>
-                <select name="os">
+            <tr><td class="txt">Age:</td><td><input name="age"  size="6" class="input1" maxlength="2"/></td></tr>    
+            <tr><td class="txt">Personality:</td><td><input name="personality"  size="6" class="input1"/><span class="sp">(Don't know your personality type?)</span></td></tr>   
+            <tr><td class="txt">Favourite OS:</td><td>
+                <select name="os" class="input1">
                     <option>Windows</option>
                     <option>Mac OS</option>
                     <option>Linux</option>
@@ -34,16 +25,19 @@
                     </select>
 
             </td></tr>
-            <tr><td>Seeking age:</td><td><input name="ageMin" size="4"/>To <input name="ageMax"  size="4"/></td></tr>    
+            <tr><td class="txt">Seeking age:</td><td><input name="ageMin" size="6" class="input1" placeholder="min" maxlength="2"/> 
+                <span class="input1">&nbsp;To&nbsp;</span><input name="ageMax"  size="6" class="input1" placeholder="max" maxlength="2"/></td></tr>    
             
         </table>
             <br>
 
-        <input type="submit" value="Sign-up"/> 
+        <input type="submit" value="Sign-up" class="input1 txt" style="background-color:lightpink;"/> 
 
         </form>
 
     </div>
+
+    <div class="fdiv">New User signup:</div>
 </body>
 
 </html>
