@@ -12,6 +12,18 @@
     padding-bottom: 5px;
     padding-right: 35px;
   }
+
+  .myDiv2 {
+    border: 5px outset blue;
+    width: max-content;
+    height: max-content;
+    border-style: solid;
+    position: absolute;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 35px;
+    padding-left: 30px;
+  }
    .fdiv {
        background-color: white;
     margin-left:5px;
@@ -24,14 +36,32 @@
       float: left;
       margin-left:5px;
   }
-  td{
+  td, textarea{
       text-align: left;
+  }
+  .textar{
+    align-content:left;
+    text-align: left !important;
   }
   .txt{
       font-weight: bold;
   }
+
+  .txt1{
+    padding-right: 70px;
+    padding-top: 10px;
+   }
   .sp{
       color: lightpink;
       font-weight: bold;
       padding-left: 3px;
+  }
+
+  .h1{
+      color:blue;
+      text-align: left;
+  }
+
+  .btns{
+      width: 287px;
   }

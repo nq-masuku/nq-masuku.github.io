@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signupc.css">
+</head>
+
+<body>
+    <div class="myDiv2">    
+        <h1 class="h1">Task List</h1>
+
+        <table>
+            <tr><td class="txt1">Task</td><td >Task List</td></tr>
+            <tr><td class="txt1"><input name="task" size="36"/></td>
+                <td rowspan="3"><textarea rows="5" cols="50" class="textar" id="alltext">
+                 Finish current project
+                 Meet with Mike
+                 Get specs for new project
+                </textarea></td></tr>
+            <tr><td class="txt1"><input type="submit" value="Add Task"  class="btns" 
+                onclick="addText()"/> </td></tr>
+            <tr><td class="txt1"><input type="submit" value="Clear Tasks"  class="btns"/> </td></tr>
+            
+        </table>
+
+    </div>
+
+    <script>
+        var Alltext = document.getElementById("alltext").value;
+        function addText() {
+            Alltext += 'Hey'
+        }
+    document.getElementById("alltext").value = Alltext;
+    </script>
+
+</body>
+
+</html>
