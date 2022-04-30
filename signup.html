@@ -20,29 +20,26 @@
     <form action="http://mumstudents.org/params.php">
         <table>
             <tr><td>Name:</td><td><input name="name" /></td></tr>
-            <tr><td>Student ID:</td><td><input name="id" /></td></tr>
-            <tr><td>Select assignment:</td><td>
-                <select name="assignmentToViewGradesFor">
-                    <option>W1L3- Grades</option>
-                    <option>W1L1- HomePage</option>
-                    <option>W1L2- About Me</option>
-                    <option>W1L3- Recipe</option>
-                    <option>W1L4- Movie Review</option>
-                    </optgroup>
+            <tr><td>Gender:</td><td><input type="radio" name="cc" value="Male" /> Male
+                <input type="radio" name="cc" value="Female" checked /> Female</td></tr>
+
+            <tr><td>Age:</td><td><input name="age"  size="4"/></td></tr>    
+            <tr><td>Personality:</td><td><input name="personality"  size="4"/></td></tr>   
+            <tr><td>Favourite OS:</td><td>
+                <select name="os">
+                    <option>Windows</option>
+                    <option>Mac OS</option>
+                    <option>Linux</option>
+                  
                     </select>
 
             </td></tr>
+            <tr><td>Seeking age:</td><td><input name="ageMin" size="4"/>To <input name="ageMax"  size="4"/></td></tr>    
             
         </table>
             <br>
 
-            <input type="radio" name="cc" value="Feb entry" /> Feb entry
-            <input type="radio" name="cc" value="April entry" /> April entry
-            <input type="radio" name="cc" value="Aug entry" /> Aug entry 
-
-            <p>Please check<input type="checkbox" name="confirmation" /> to confirm the authenticity of the provided details</p>
-      
-        <input type="submit" value="Get Grade!"/> 
+        <input type="submit" value="Sign-up"/> 
 
         </form>
 
