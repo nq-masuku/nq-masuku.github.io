@@ -13,13 +13,20 @@
     <p>Deposit: <input type="text" name="depname" id="depid"> </p>
     <button type="button" name="btn" id="btnid" onclick="addAccount()">Create new account</button><br>
     <textarea type="text" id="txta" columns="160" rows="4" style="margin-top: 3px; width: 500px; height:150px"></textarea><br>
-	<p>Select Account: <select name="accs" id="accounts" onclick="enable()">
-        <option value="0">Choose account</option>
-        </select>
-        <input type="text" name="money" id="money" placeholder="Enter amount">
-    </p>
-    <button type="button" name="btn" id="deposit" onclick="deposit()">Deposit</button>
-    <button type="button" name="btn" id="debit" onclick="debit()">Debit</button>
+	<hr style="width: 500px; float: left;"><br>
+
+    <fieldset style="width: 780px; float: left;">
+        <legend>Deposit/Debit</legend>
+        <p>Select Account: <select name="accs" id="accounts" onclick="enable()">
+            <option value="0">Choose account</option>
+            </select>
+            <input type="text" name="money" id="money" placeholder="Enter amount">
+        </p>
+        <button type="button" name="btn" id="deposit" onclick="deposit()">Deposit</button>
+        <button type="button" name="btn" id="debit" onclick="debit()">Debit</button>
+    </fieldset>
+
+   
 
 
 </body></html>
