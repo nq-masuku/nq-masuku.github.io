@@ -6,33 +6,49 @@
     <link rel="stylesheet" href="signupc.css">
 </head>
 
-<body>
+<body onload="windowLoaded()">
     <div class="myDiv2">    
         <h1 class="h1">Task List</h1>
 
         <table>
             <tr><td class="txt1">Task</td><td >Task List</td></tr>
-            <tr><td class="txt1"><input name="task" size="36"/></td>
-                <td rowspan="3"><textarea rows="5" cols="50" class="textar" id="alltext">
-                 Finish current project
-                 Meet with Mike
-                 Get specs for new project
-                </textarea></td></tr>
-            <tr><td class="txt1"><input type="submit" value="Add Task"  class="btns" 
-                onclick="addText()"/> </td></tr>
-            <tr><td class="txt1"><input type="submit" value="Clear Tasks"  class="btns"/> </td></tr>
+            <tr><td class="txt1"><input name="task" size="36" id="task"/></td>
+                <td rowspan="3">
+<textarea rows="5" cols="50" class="textar" id="alltext">
+</textarea></td></tr>
+            <tr><td class="txt1">
+                <input type="submit" value="Add Task"  class="btns" 
+                onclick="addText();"/> </td></tr>
+            <tr><td class="txt1"><input type="submit" value="Clear Tasks"  class="btns"
+                onclick="clearAll();"/> </td></tr>
             
         </table>
 
     </div>
 
-    <script>
-        var Alltext = document.getElementById("alltext").value;
-        function addText() {
-            Alltext += 'Hey'
-        }
-    document.getElementById("alltext").value = Alltext;
-    </script>
+
+
+<script>
+    var Alltext;
+    function addText() {
+        Alltext +=   '\r\n'+document.getElementById("task").value;
+        document.getElementById("alltext").value =   Alltext;
+    }
+
+    function windowLoaded(){
+        document.getElementById("alltext").value ="Finish current project\r\nMeet with Mike\r\nGet specs for new project";
+        Alltext ="Finish current project\r\nMeet with Mike\r\nGet specs for new project";
+        window.localStorage.setItem("listBox",  document.getElementById("alltext").value);
+        document.getElementById("alltext").value =   localStorage.listBox;
+    }
+
+    function clearAll(){
+        document.getElementById("alltext").value = '';
+        window.localStorage.listBox = '';
+        Alltext = '';
+    }
+
+</script>
 
 </body>
 
