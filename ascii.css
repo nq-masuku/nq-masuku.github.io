@@ -1,0 +1,73 @@
+fieldset{
+    border-width: 2px;
+    width: max-content;
+    height: 50px;
+    display: inline;
+    font-weight:bold;
+    border: 3px solid;
+}
+
+.main{
+    background-color:  #CCCCFF;
+    width: 98%;
+    align-content: center;
+    margin: auto;
+}
+
+#text-area{
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#controls{
+    width: max-content;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+select{
+    width:98%;
+}
+#validate{
+   margin-left:93%;
+}
+
+.tiny {
+    font-size: 7pt;
+}
+
+.small {
+    font-size: 10pt;
+}
+
+.medium {
+    font-size: 12pt;
+}
+
+.large {
+    font-size: 16pt;
+}
+
+.xl {
+    font-size: 24pt;
+}
+
+.xxl {
+    font-size: 32pt;
+}
