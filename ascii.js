@@ -12,6 +12,7 @@
         let isRunning = false;
         let firstFrame = null;
         let frame = null;
+        let hyt = "400px";
     
      
        
@@ -39,27 +40,36 @@
                 startAnimation();
             }
         }
-    
-       
-        function changeSize() {
-            switch(fontSize.value) {
+
+        function changeSize(size) {
+            switch(size) {
                 case "Tiny":
-                    textArea.className = "tiny";
+                    fontSize = "7pt";
+                    hyt = "400px"
                     break;
                 case "Small": 
-                    textArea.className = "small";
+                    fontSize = "10pt";
+                    hyt = "400px"
+                    break;
+                case "Medium":
+                    fontSize = "12pt";
+                    hyt = "400px"
                     break;
                 case "Large":
-                    textArea.className = "large";
+                    fontSize = "16pt";
+                    hyt = "510px"
                     break;
                 case "Extra Large":
-                    textArea.className = "xl";
+                    fontSize = "24pt";
+                    hyt = "510px"
                     break;
                 case "XXL":
-                    textArea.className = "xxl";
+                    fontSize = "32pt";
+                    hyt = "510px"
                     break;
                 default:
-                    textArea.className = "medium";
+                    fontSize = "12pt";
+                    hyt = "400px"
                     break;
             }
         }
@@ -105,12 +115,18 @@
             index = 0;
             stopAnimation();
         }
+
+        $("#fontsize").change(function () {
+           changeSize(document.getElementById("fontsize").value);
+           $("#text-area").css("font-size", fontSize)
+           $("#text-area").css("height",hyt);
+        });
     
         startBtn.onclick = onStart;
         stopBtn.onclick = onStop;
         animation.onchange = changeAnimation;
         speedBox.onchange = changeSpeed;
-        fontSize.onchange = changeSize;
+        //fontSize.onchange = changeSize;
         
     };
     
