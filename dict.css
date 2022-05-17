@@ -1,0 +1,18 @@
+.headingdiv{
+    background-color: #DEDEDE;
+    overflow-x:hidden;
+}
+
+.inputdiv{
+    background-color: #F5F5F5;
+    overflow-x:hidden;
+}
+
+.resultsdiv{
+    width: 100%;
+    overflow-x:hidden;
+    background-color: #f5f5f50a;
+    padding-top: 25px;
+
+}
+
