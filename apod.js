@@ -14,6 +14,7 @@ $(document).ready(
     "error": noPicture
     });
     };
+    
     function showPicture(data) {
     $("#pic").attr("src", data.url);
     $("h3").text(data.title);
